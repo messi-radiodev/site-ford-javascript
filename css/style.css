@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(19, 81, 216, 0.3);  /* azul padrão com transparência */
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 6px 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-arrow:hover {
+    background-color: rgba(19, 81, 216, 0.6);  /* um pouco menos transparente ao passar o mouse */
+    transform: translateY(-50%) scale(1.1);    /* leve aumento visual no hover */
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+div#carousel {
+    position: relative;
+    width: 60%;             
+    margin: 0 auto;         
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden
+}
+
+div#carousel-title a {
+    text-decoration: none;
+}
+
+div#carousel-title  {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+	display: inline-block;
+}
+
+header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+header div {
+    display: inline;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80vw;
+}
+
+header nav a {
+    color: #1351d8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+header nav a:hover {
+    color: #1b357e;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100% - 167px);
+}
+
+nav#social {
+    display: inline;
+    width: 80%;
+}
+
+nav#social ul img {
+    width: 28px;
+}
+
+span.redesociais {
+    color: #ffffff;
+    vertical-align: super;
+}
+
+footer {
+    background: #1B357E;
+    padding: 20px;
+}
+
+footer div {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+}
+
+button:hover {
+    background: #1b357e;
+}
+button {
+    background: #1351d8;
+    color: #fff;
+    border: 0px;
+    border-radius: 10px;
+}
