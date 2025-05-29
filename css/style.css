@@ -11,24 +11,27 @@ html {
 }
 
 .nav-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(19, 81, 216, 0.3);  /* azul padrão com transparência */
+    position: static;     /* tira o absolute */
+    background-color: rgba(19, 81, 216, 0.3);
     color: white;
     border: none;
     font-size: 25px;
     padding: 6px 10px;
     cursor: pointer;
-    z-index: 10;
     border-radius: 50%;
     user-select: none;
     transition: background-color 0.3s, transform 0.2s;
+    flex-shrink: 0;      /* evita que o botão encolha */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-arrow:hover {
-    background-color: rgba(19, 81, 216, 0.6);  /* um pouco menos transparente ao passar o mouse */
-    transform: translateY(-50%) scale(1.1);    /* leve aumento visual no hover */
+    background-color: rgba(19, 81, 216, 0.6);
+    transform: scale(1.1);
 }
 
 #prev-btn {
@@ -41,12 +44,30 @@ html {
 
 div#carousel {
     position: relative;
-    width: 60%;             
+    width: 95%;             
     margin: 0 auto;         
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     overflow: hidden
+}
+
+#carousel {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    width: 60%;          /* mesmo tamanho do #carousel */
+    margin: 0 auto;      /* centralizar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* espaça setas e imagem */
 }
 
 div#carousel-title a {
@@ -59,6 +80,13 @@ div#carousel-title  {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+#carousel-link {
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+    min-width: 0;
 }
 
 header ul {

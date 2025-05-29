@@ -30,14 +30,17 @@
 
     </header>
     <main>
-        <div id="carousel">
+        <div class="carousel-container">
             <button id="prev-btn" class="nav-arrow">⟵</button>
-            <button id="next-btn" class="nav-arrow">⟶</button>
+            <a id="carousel-link" href="#" style="display: block;">
+                <div id="carousel"></div>
+            </a>
+            <button id="next-btn" class="nav-arrow">⟶</button>           
         </div>
+
         <div id="carousel-title">
         </div>
         <script>
-             //insert each image on carousel
             carouselArr.push(new Carousel("img/imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
             carouselArr.push(new Carousel("img/imagem_2.jpg","Ford a nossa história","#"));
             carouselArr.push(new Carousel("img/imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
