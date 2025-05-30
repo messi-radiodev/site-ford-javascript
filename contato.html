@@ -38,33 +38,41 @@
             <div>
                 <h2 class="titulo">Sobre Você</h2>
             <form onsubmit="Post(this);">
-                <input id="nomeid" type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="text" name="email" placeholder="E-MAIL*" class="fordform" required>
+                <input id="nomeid" type="text" name="nome" placeholder="Nome*" class="fordform" required>
+                <input type="text" name="email" placeholder="Email*" class="fordform" required>
                 <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
-                <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
-                <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+                <input type="text" name="sobrenome" placeholder="Sobrenome*" class="fordform" required>
+                <input type="text" name="telefone" placeholder="Telefone*" class="fordform" required>
                 <select name="contato" class="fordform" required>
-                    <option selected>COMO DESEJA SER CONTATADO</option>
-                    <option>TELEFONE</option>
-                    <option>E-MAIL</option>
+                    <option disabled selected>Tipo do contato:</option>
+                    <option value="">Elogio</option>
+                    <option value="">Reclamação</option>
+                    <option value="">Solicitação</option>
                 </select>
-            <button onclick="Enviar()" type="submit">Enviar</button>
+                <br>
+                <textarea class="inputcont" placeholder="Mensagem*" rows="5"></textarea>
+            <button class="botao_enviar" onclick="Enviar()" type="submit">Enviar</button>
             </form>
             </div>
         </div>
     </main>
     <footer>
-        <nav id="social">
-            <ul>
-                <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
-            </ul>
-        </nav>
-        <div>
-           <img src="img/ford-96.png" width="70"  />
+        <div class="footercontatos">
+            <p>
+                Redes Sociais: 
+            </p>
+                <a href="#"><img class="imgfooter" src="img/facebook-50.png" alt="facebook"></a>         
+                <a href="#"><img class="imgfooter" src="img/instagram-logo-50.png" alt="instagram"> </a>
+                <a href="#"><img class="imgfooter" src="img/youtube-squared-50.png" alt="youtube"> </a>
         </div>
-    </footer>    
+        <div class="copyright">
+            <p>
+                Copyright © 2025 Ford Motor Company
+            </p>
+        </div>
+        <div class="logofooter">      
+            <img src="img/ford-96.png" alt="logo_ford">
+        </div>  
+    </footer>   
 </body>
 </html>

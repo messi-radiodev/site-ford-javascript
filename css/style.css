@@ -11,7 +11,7 @@ html {
 }
 
 .nav-arrow {
-    position: static;     /* tira o absolute */
+    position: static;  
     background-color: rgba(19, 81, 216, 0.3);
     color: white;
     border: none;
@@ -151,20 +151,45 @@ nav#social ul img {
     width: 28px;
 }
 
-span.redesociais {
-    color: #ffffff;
-    vertical-align: super;
-}
-
 footer {
-    background: #1B357E;
-    padding: 20px;
+    width: 100%;
+    background-color: #1b357e;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
 }
 
-footer div {
-    display: inline;
-    float: right;
-    margin-right: 40px;
+.footercontatos {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footercontatos p {
+    margin-right: 10px;
+}
+
+.copyright {
+    flex: 1;
+    min-width: 200px;
+    color: white;
+    text-align: center;
+}
+
+.imgfooter {
+    width: 60%;
+}
+
+.imgfooter:hover {
+    transform: scale(1.20);
+    transition: 0.3s;
+}
+
+.logofooter {
+    max-width: 100%;
 }
 
 button:hover {

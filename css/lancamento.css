@@ -83,3 +83,45 @@ div#compare {
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
 }
+
+.botao_comparar {
+    background-color: #1351d8;
+    color: white;
+    width: 100%;
+    max-width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao_comparar:hover {
+    color: #ccc;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.botao_comparar:focus {
+    outline: 2px solid #1b357e;
+}
+
+.botao_fechar {
+    background-color: #1351d8;
+    color: white;
+    width: 100%;
+    max-width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao_fechar:hover {
+    color: #ccc;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.botao_fechar:focus {
+    outline: 2px solid #1b357e;
+}

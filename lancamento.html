@@ -34,7 +34,7 @@
         <div>
             <iframe style = "display: block; margin-bottom: 30px; margin-left: auto; margin-right: auto; width: 50%;
             height: 500px;" src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&modestbranding=0&loop=1&mute=1&rel=0&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p style="font-style: italic;">A Ford Ranger 2022 é uma picape robusta e versátil, projetada para oferecer desempenho, tecnologia e conforto. Equipada com motores a diesel, ela conta com versões de 2.2L (160 cv) e 3.2L (200 cv), ambas acopladas a transmissões automáticas de 6 marchas e tração 4x4.</p>
+            <p style="font-style: italic;">A Ford Ranger é uma picape robusta e versátil, projetada para oferecer desempenho, tecnologia e conforto. Equipada com motores a diesel, ela conta com versões de 2.2L (160 cv) e 3.2L (200 cv), ambas acopladas a transmissões automáticas de 6 marchas e tração 4x4. <br> <br></p>
         </div>
         <div>
             <ul class="modelcars">
@@ -42,14 +42,14 @@
                     <img src="img/XL_Cabine.jpg" class="photocar">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL_Cabine.jpg'));">
                         </div>
                         <div class="info">
                             <span class="textmodel">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
                             <span class="textprice">Preço Sugerido: R$ 183.850</span>
                         </div>
                         <div>
-                            <img src="img/info.png">
+                            <a href="#"><img src="img/info.png"></a>
                         </div>
                     </div>
                 </li>
@@ -57,14 +57,14 @@
                     <img src="img/xls_2_2_diesel.jpg" class="photocar">
                     <div class="infocar">
                         <div>
-                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'));">
+                            <input type="checkbox" value="car1" class="checkbox" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls_2_2_diesel.jpg'));">
                         </div>
                         <div class="info">
                             <span class="textmodel">XLS 2.2 Diesel 4X4 AT 2022</span>
                             <span class="textprice">Preço Sugerido: R$ 220.690</span>
                         </div>
                         <div>
-                            <img src="img/info.png">
+                            <a href="#"><img src="img/info.png"></a>
                         </div>
                     </div>
                 </li>
@@ -79,29 +79,34 @@
                             <span class="textprice">Preço Sugerido: R$ 222.790</span>
                         </div>
                         <div>
-                            <img src="img/info.png">
+                            <a href="#"><img src="img/info.png"></a>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
         <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" style="height: 40px; width: 200px;" onclick="ShowCompare()">Comparar Carros</button>
+            <button class="botao_comparar" type="button" style="height: 40px; width: 200px;" onclick="ShowCompare()">Comparar Carros</button>
         </div> 
     </main>
     <footer>
-        <nav id="social">
-            <ul>
-                <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
-            </ul>
-        </nav>
-        <div>
-           <img src="img/ford-96.png" width="70"  />
+        <div class="footercontatos">
+            <p>
+                Redes Sociais: 
+            </p>
+                <a href="#"><img class="imgfooter" src="img/facebook-50.png" alt="facebook"></a>         
+                <a href="#"><img class="imgfooter" src="img/instagram-logo-50.png" alt="instagram"> </a>
+                <a href="#"><img class="imgfooter" src="img/youtube-squared-50.png" alt="youtube"> </a>
         </div>
-    </footer> 
+        <div class="copyright">
+            <p>
+                Copyright © 2025 Ford Motor Company
+            </p>
+        </div>
+        <div class="logofooter">      
+            <img src="img/ford-96.png" alt="logo_ford">
+        </div>  
+    </footer>    
     <div id="compare">
         <table>
             <tbody>
@@ -164,7 +169,7 @@
             
         </table>
         <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" style="height: 40px; width: 200px;" onclick="HideCompare()">Fechar</button>
+            <button class="botao_fechar" type="button" style="height: 40px; width: 200px;" onclick="HideCompare()">Fechar</button>
         </div> 
     </div>   
 </body>

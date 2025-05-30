@@ -52,3 +52,36 @@ button {
 .titulo {
     margin-left: 8px;
 }
+
+.botao_enviar {
+    background-color: #1351d8;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao_enviar:hover {
+    color: #ccc;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.botao_enviar:focus {
+    outline: 2px solid #1b357e;
+}
+
+.inputcont {
+    width: 92%;
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.inputcont:focus {
+    outline: 2px solid #1351d8;
+}
