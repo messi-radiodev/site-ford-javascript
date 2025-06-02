@@ -60,10 +60,12 @@ function ShowCompare() {
 
     UpdateCompareTable();
     document.getElementById("compare").style.display = "block";
+    document.body.classList.add("no-scroll"); // impede rolagem
 }
 
 function HideCompare(){
     document.getElementById("compare").style.display = "none"; 
+    document.body.classList.remove("no-scroll"); // volta a rolagem
 }
 
 function UpdateCompareTable() {

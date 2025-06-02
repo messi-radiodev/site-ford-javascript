@@ -1,4 +1,8 @@
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 ul.modelcars {
     display: block;
     text-align: center;
@@ -47,12 +51,24 @@ img.photocar {
 
 table {
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vh;
     margin-bottom: 10px;
   }
+
+#compare {
+    overflow-x: auto;
+}
+
+#compare table {
+    width: 100%;
+    min-width: 600px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
   
   th, td {
     text-align: left;
@@ -124,4 +140,61 @@ div#compare {
 
 .botao_fechar:focus {
     outline: 2px solid #1b357e;
+}
+
+@media screen and (max-width: 768px) {
+    #compare {
+        width: 90vw;
+        left: 5vw;
+        height: auto;
+    }
+
+    .infocar {
+        display: block;
+        text-align: center;
+    }
+
+    .infocar .info {
+        display: block;
+        width: 100%;
+    }
+
+    ul.modelcars li {
+        display: block;
+        margin: 20px auto;
+    }
+
+    img.photocar {
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    header nav li {
+        display: block;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
 }

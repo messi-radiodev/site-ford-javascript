@@ -10,6 +10,15 @@ html {
     height: 100%;
 }
 
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-arrow {
     position: static;  
     background-color: rgba(19, 81, 216, 0.3);
@@ -49,12 +58,12 @@ div#carousel {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    overflow: hidden
+    overflow: hidden;
 }
 
 #carousel {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 16 / 9;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +148,7 @@ nav li {
 }
 
 main {
-    min-height: calc(100% - 167px);
+    flex: 1;
 }
 
 nav#social {
@@ -190,6 +199,7 @@ footer {
 
 .logofooter {
     max-width: 100%;
+    margin-right: 30px;
 }
 
 button:hover {
@@ -200,4 +210,57 @@ button {
     color: #fff;
     border: 0px;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    header nav li {
+        display: block;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-container {
+        width: 95%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright, .footercontatos, .logofooter {
+        flex: none;
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+
 }

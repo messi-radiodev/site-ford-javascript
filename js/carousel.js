@@ -31,7 +31,7 @@ class Carousel {
         carouselDiv.style.backgroundSize = "contain";
         carouselDiv.style.backgroundPosition = "center";
         carouselDiv.style.backgroundRepeat = "no-repeat";
-        carouselDiv.style.height = "500px";
+        
     
         const titleDiv = document.getElementById("carousel-title");
         titleDiv.innerHTML = `<a href="${item.url}">${item.title}</a>`;
