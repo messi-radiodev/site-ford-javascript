@@ -15,6 +15,10 @@ select.fordform {
     color: #807d7d;
 }
 
+.fordform:focus {
+    outline: 2px solid #1351d8;
+}
+
 input:focus-visible {
     outline: none;
 }
